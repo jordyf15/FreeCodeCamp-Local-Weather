@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+/* 
+background color #f3d040
+tv color 1 #3458e2
+tv color 2 #20c8f7
+tv leg color #6c2142
+tv screen color 1 #d1dce2
+tv screen color 2 #93a5a9
+tv antenna color 1 #d2dde3
+tv antenna color 2 #94a6aa
+paper color #ebd6ab
+pin color #e9b896
+*/
+body{
+    background-color: #3458e2;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Press Start 2P', cursive;
+}
+#screenButtonContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: pink; */
+    width: 100%;
+    height: 100vh;
+}
+#screen{
+    box-shadow: 0 0 0 30px black;
+    background-color: #d1dce2;
+    border: 30px solid #93a5a9;
+    border-top: none;
+    border-right: none;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#buttonTagContainer{
+    height: 85%;
+}
+#buttonContainer{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.button{
+    background-color: #20c8f7;
+    border: 20px solid black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button span{
+    user-select: none;
+}
+.button:active{
+   background-color: #60a3bc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#tag{
+    background-color:#ebd6ab;
+    width: 250px;
+    height:200px;
+    margin-top: 30px;
+    border-top: 10px solid #e9b896;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#title{
+    text-align: center;
+    font-size: x-large;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    text-align: center;
 }

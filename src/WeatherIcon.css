@@ -1,0 +1,31 @@
+i{
+    font-size: 60px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.wi-hail, .wi-sleet, .wi-snow-wind, .wi-storm-showers{
+    animation-name: raining;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes raining{
+    100%{bottom: 10px}
+}
+.wi-day-sunny{
+    animation-name: sunny;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes sunny{
+    100%{transform: rotate(45deg)}
+}
+.wi-cloud, .wi-cloudy{
+    animation-name: cloudy;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes cloudy{
+    0%{left: 5px}
+    100%{right: 5px}
+}
