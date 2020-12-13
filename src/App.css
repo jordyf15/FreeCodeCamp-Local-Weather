@@ -1,15 +1,3 @@
-/* 
-background color #f3d040
-tv color 1 #3458e2
-tv color 2 #20c8f7
-tv leg color #6c2142
-tv screen color 1 #d1dce2
-tv screen color 2 #93a5a9
-tv antenna color 1 #d2dde3
-tv antenna color 2 #94a6aa
-paper color #ebd6ab
-pin color #e9b896
-*/
 body{
     background-color: #3458e2;
     margin: 0px;
@@ -22,7 +10,6 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    /* background-color: pink; */
     width: 100%;
     height: 100vh;
 }
